@@ -17,10 +17,10 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: hugagoth.com_development
+  database: hugagoth_development
   pool: 5
-  username: root
-  password:
+  username: hugagoth
+  password: hugagothdev
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -29,7 +29,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: hugagoth.com_test
+  database: hugagoth_test
   pool: 5
   username: root
   password:
@@ -38,7 +38,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: hugagoth.com_production
+  database: hugagoth_production
   pool: 5
   username: root
   password: 

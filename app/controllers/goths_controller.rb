@@ -1,0 +1,2 @@
+class GothsController < ApplicationController
+end

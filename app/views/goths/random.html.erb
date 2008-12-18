@@ -1,0 +1,11 @@
+<div id="goth">
+
+	<h3><%= @goth.name %></h3>
+
+	<%= goth_image_tag @goth %>
+
+	<p>
+		vote for <%= goth_vote_link @goth %> on <%= link_to('gothornot.com', 'http://gothornot.com/') %>
+	</p>
+	
+</div>

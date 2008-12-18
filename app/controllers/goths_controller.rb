@@ -1,11 +1,12 @@
 class GothsController < ApplicationController
 
-	def index
-		@goths = Goth.find(:all)
-	end
-
+	# show a random Goth
 	def random
 		@goth = Goth.random()
+	end
+
+	# about page
+	def about
 	end
 
 end

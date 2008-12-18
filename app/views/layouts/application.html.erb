@@ -4,7 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Because goths need love to - hugagoth.com</title>
+	<title><%= @page_title || 'because goths need love to' %> - hugagoth.com</title>
 	<%= stylesheet_link_tag 'reset', 'hugagoth' %>
 </head>
 
@@ -18,7 +18,9 @@
 		<h1><%= link_to 'hug a goth', :root %></h1>
 		<h2>and put a smile on the face of the damned</h2>
 		<ul>
-			<li><%= link_to 'about', :about %></li>
+			<li><%= link_to_unless_current 'home', :root %></li>
+			<li><%= link_to_unless_current 'about', :about %></li>
+			<li><%= link_to_unless_current 'disclaimer', :disclaimer %></li>
 		</ul>
 	</div>
 	<!-- end #header -->

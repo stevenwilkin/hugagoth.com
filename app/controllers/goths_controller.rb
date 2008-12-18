@@ -7,6 +7,12 @@ class GothsController < ApplicationController
 
 	# about page
 	def about
+		@page_title = 'about'
+	end
+
+	# disclaimer page
+	def disclaimer
+		@page_title = 'disclaimer'
 	end
 
 end

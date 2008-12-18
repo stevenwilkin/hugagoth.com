@@ -6,9 +6,57 @@
 body {
 	background-color: #000000;
 	font-family: arial;
+	font-size: 15px;
 	color: #FFFFFF;
 }
 
+a {
+	text-decoration: none;
+	color: #CC0000;
+}
+
+a:hover {
+	color: #666666;
+}
+
 #wrapper {
-	margin: 100px;
+	margin: 20px 75px;;
+}
+
+#header {
+}
+
+#header h1 {
+	font-size: 30px;
+}
+
+#header h1 a {
+	color: #CC0000;
+}
+
+#header h2 {
+	font-size: 20px;
+	color: #666666;
+}
+
+#content {
+	margin: 30px 0 35px 0;
+}
+
+#goth {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#goth h3 {
+	margin: 0 0 5px 0;
+}
+
+#goth p {
+	margin: 5px 0 0;
+}
+
+#footer {
+	font-size: 12px;
+	text-align: center;
 }

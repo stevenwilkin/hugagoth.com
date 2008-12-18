@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Because goths need love to - hugagoth.com</title>
-	<%= stylesheet_link_tag 'hugagoth' %>
+	<%= stylesheet_link_tag 'reset', 'hugagoth' %>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 <div id="wrapper">
 
 	<div id="header">
-		<h1>hug a goth</h1>
+		<h1><%= link_to 'hug a goth', :root %></h1>
 		<h2>and put a smile on the face of the damned</h2>
 	</div>
 	
@@ -25,7 +25,7 @@
 	</div>
 	
 	<div id="footer">
-	
+		&copy; 2008 <%= link_to 'Steven Wilkin', 'http://stevenwilkin.com' %>
 	</div>
 
 </div>

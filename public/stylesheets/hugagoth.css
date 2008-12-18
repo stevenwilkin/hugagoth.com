@@ -1,0 +1,14 @@
+/**
+ * CSS for hugagoth.com
+ * Steven Wilkin
+ */
+
+body {
+	background-color: #000000;
+	font-family: arial;
+	color: #FFFFFF;
+}
+
+#wrapper {
+	margin: 100px;
+}

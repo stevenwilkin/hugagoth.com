@@ -10,7 +10,7 @@ require 'open-uri'
 # example profile page:
 # http://gothornot.com/?vote_username=Ruler_Of_The_Dead
 
-destination = '/home/steve/code/ruby/gothscraper/img/'
+destination = '../public/images/goths'
 domain = 'http://gothornot.com/'
 
 #just keep looping until script is killed
@@ -26,7 +26,7 @@ while 1 == 1
 	puts "image_url: " + image_url
 	
 	# see if we already have the image
-	image = destination + name + '.jpg'
+	image = destination + '/' + name + '.jpg'
 	if File.exists?(image)
 	    puts image + ' exists, skipping' 
 	else

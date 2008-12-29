@@ -6,7 +6,7 @@
 require 'rubygems'
 require '../config/environment'
 
-image_dir = '/home/steve/code/ruby/gothscraper/img'
+image_dir = '../public/images/goths'
 
 images = Dir.glob(image_dir + '/*.jpg')
 

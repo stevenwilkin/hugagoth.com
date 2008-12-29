@@ -12,7 +12,7 @@
 ActiveRecord::Schema.define(:version => 20081217193621) do
 
   create_table "goths", :force => true do |t|
-    t.string "name", :default => "", :null => false
+    t.string "name", :null => false
   end
 
 end

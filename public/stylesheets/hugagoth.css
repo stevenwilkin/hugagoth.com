@@ -109,3 +109,19 @@ p {
 #disclaimer {
 	width: 50%;
 }
+
+/**
+ * pagination
+ */
+
+.pagination .next_page {
+	float: right;
+}
+
+.pagination .prev_page {
+	float: left;
+}
+
+.pagination .disabled {
+	display: none;
+}

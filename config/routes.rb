@@ -31,9 +31,12 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => 'goths', :action => 'random'
+  map.root :controller => 'goths', :action => 'index'
   map.about '/about', :controller => 'goths', :action => 'about'
   map.disclaimer '/disclaimer', :controller => 'goths', :action => 'disclaimer'
+
+  # pagination
+  map.connect '/page/:page', :controller => 'goths', :action => 'index'
 
   # See how all your routes lay out with "rake routes"
 

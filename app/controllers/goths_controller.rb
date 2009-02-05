@@ -5,6 +5,11 @@ class GothsController < ApplicationController
 		@goth = Goth.random()
 	end
 
+	# view the published goths
+	def index
+		@goths = Goth.paginate :page => params[:page], :per_page => 5, :order => 'published_at DESC'
+	end
+
 	# about page
 	def about
 		@page_title = 'about'

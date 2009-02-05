@@ -1,0 +1,18 @@
+<% return if @goths.empty? %>
+
+<ul id="goths">
+
+<% @goths.each do |goth| %>
+
+<li>
+	<%= goth_image_tag goth %>
+	<p>
+		<%= goth_vote_link goth %>
+	</p>
+</li>
+
+<% end %>
+
+</ul>
+
+<%= will_paginate @goths %>

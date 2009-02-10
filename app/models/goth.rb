@@ -16,4 +16,10 @@ class Goth < ActiveRecord::Base
 		g.update_attribute(:published_at, Time.now)
 	end
 
+	# find a previously published goth
+	def self.find_published(year, month, day, name)
+		date = Date.civil(year.to_i, month.to_i, day.to_i)
+		self.find(:first, :conditions => ["DATE(published_at) = ? AND name = ?", date, name])
+	end
+
 end

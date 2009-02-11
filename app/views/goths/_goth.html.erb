@@ -1,0 +1,11 @@
+<% return if goth.nil? %>
+
+<h2><%= goth_permalink goth %></h2>
+
+<h3><%= goth_published_date goth %></h3>
+
+<p>
+	<%= goth_image_tag goth %>
+</p>
+
+vote for <%= goth_vote_link goth %> on <%= link_to 'gothornot.com', 'http://gothornot.com'  %>

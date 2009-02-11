@@ -22,4 +22,9 @@ module GothsHelper
 		link_to goth.name, goth_permalink_url(goth)
 	end
 
+	# format the published date in a specific format
+	def goth_published_date(goth)
+		goth.published_at.strftime('%b %d, %Y %H:%M')
+	end
+
 end

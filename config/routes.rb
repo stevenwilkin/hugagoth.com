@@ -38,6 +38,9 @@ ActionController::Routing::Routes.draw do |map|
   # pagination
   map.connect '/page/:page', :controller => 'goths', :action => 'index'
 
+  # permalinks to published goths
+  map.connect '/:year/:month/:day/:name', :controller => 'goths', :action => 'show'
+
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.

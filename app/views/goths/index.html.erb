@@ -4,12 +4,9 @@
 
 <% @goths.each do |goth| %>
 
-<li>
-	<%= goth_image_tag goth %>
-	<p>
-		<%= goth_vote_link goth %>
-	</p>
-</li>
+	<li>
+		<%= render :partial => 'goth', :locals => {:goth => goth} %>
+	</li>
 
 <% end %>
 

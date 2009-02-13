@@ -15,6 +15,11 @@ class GothsController < ApplicationController
 		@goth = Goth.find_published(params[:year], params[:month], params[:day], params[:name])	
 	end
 
+	# RSS feed for the published goths
+	def feed
+		@goths = Goth.find(:all, :limit => 10, :order => 'published_at DESC')
+	end
+
 	# about page
 	def about
 		@page_title = 'about'

@@ -39,7 +39,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/page/:page', :controller => 'goths', :action => 'index'
 
   # permalinks to published goths
-  map.connect '/:year/:month/:day/:name', :controller => 'goths', :action => 'show'
+  map.goth '/:year/:month/:day/:name', :controller => 'goths', :action => 'show'
 
   # RSS feed
   map.connect '/feed.:format', :controller => 'goths', :action => 'feed'

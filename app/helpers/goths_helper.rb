@@ -14,7 +14,7 @@ module GothsHelper
 	def goth_permalink_url(goth)
 		month = sprintf('%0.2d', goth.published_at.month)
 		day = sprintf('%0.2d', goth.published_at.day)
-		"/#{goth.published_at.year}/#{month}/#{day}/#{goth.name}"
+		goth_url :year => goth.published_at.year, :month => month, :day => day, :name => goth.name
 	end
 
 	# the permalink to this goth

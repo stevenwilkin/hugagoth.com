@@ -7,7 +7,7 @@ class GothsController < ApplicationController
 
 	# view the published goths
 	def index
-		@goths = Goth.paginate :page => params[:page], :per_page => 5, :order => 'published_at DESC'
+		@goths = Goth.paginate :conditions => 'published_at IS NOT NULL', :page => params[:page], :per_page => 5, :order => 'published_at DESC'
 	end
 
 	# display a previously published goth
@@ -17,7 +17,7 @@ class GothsController < ApplicationController
 
 	# RSS feed for the published goths
 	def feed
-		@goths = Goth.find(:all, :limit => 10, :order => 'published_at DESC')
+		@goths = Goth.find(:all, :conditions => 'published_at IS NOT NULL', :limit => 10, :order => 'published_at DESC')
 	end
 
 	# about page

@@ -5,6 +5,13 @@ module GothsHelper
 		image_tag("goths/#{goth.name}.jpg", :alt => goth.name, :title => goth.name)
 	end
 
+	# the image belonging to a particular Goth - full url
+	def goth_image_full_tag(goth)
+		image = image_path "goths/#{goth.name}.jpg"
+		url = "#{root_url.chomp('/')}#{image}"
+		image_tag url, :alt => goth.name, :title => goth.name
+	end
+
 	# link to this Goths voting page on gothornot.com
 	def goth_vote_link(goth)
 		link_to goth.name, "http://gothornot.com/?vote_username=#{goth.name}"

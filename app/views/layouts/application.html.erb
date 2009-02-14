@@ -5,6 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><%= @page_title || 'because goths need love to' %> - hugagoth.com</title>
+	<%= auto_discovery_link_tag :rss, '/feed.rss', :title => 'hug a goth RSS feed' %>
 	<%= stylesheet_link_tag 'reset', 'hugagoth' %>
 </head>
 

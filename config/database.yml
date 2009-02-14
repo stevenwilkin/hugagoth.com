@@ -40,6 +40,6 @@ production:
   encoding: utf8
   database: hugagoth_production
   pool: 5
-  username: root
-  password: 
+  username: hugagoth
+  password: jKZ8h6VbgCdw
   socket: /var/run/mysqld/mysqld.sock

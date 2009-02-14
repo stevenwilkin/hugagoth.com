@@ -75,6 +75,7 @@ p {
 }
 
 #footer {
+	clear: both;
 	font-size: 12px;
 	text-align: right;
 }
@@ -108,6 +109,10 @@ ul#goths li {
 /**
  * pagination
  */
+
+.pagination a {
+	padding: 0 0 15px 0;
+}
 
 .pagination .next_page {
 	float: right;

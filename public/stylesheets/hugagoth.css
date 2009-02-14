@@ -85,6 +85,10 @@ p {
  * goths
  */
 
+#goths {
+	padding: 0 120px 0 0;
+}
+
 #goth p, ul#goths li p {
 	margin: 5px auto;
 	text-align: center;
@@ -125,3 +129,18 @@ ul#goths li {
 .pagination .disabled {
 	display: none;
 }
+
+/**
+ * ads
+ */
+
+#ads_right {
+	float: right;
+	padding: 0 0 35px 0;
+}
+
+#ads_footer {
+	float: left;
+}
+
+

@@ -10,7 +10,7 @@ GEM
     activeresource (2.2.2)
       activesupport (= 2.2.2)
     activesupport (2.2.2)
-    mysql (2.9.1)
+    pg (0.17.1)
     rails (2.2.2)
       actionmailer (= 2.2.2)
       actionpack (= 2.2.2)
@@ -24,5 +24,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mysql
+  pg
   rails (= 2.2.2)

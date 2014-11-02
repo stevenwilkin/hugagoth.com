@@ -9,7 +9,7 @@ class Goth < ActiveRecord::Base
 	# goth will be chosen at random if there are any left which haven't been published
 	# otherwise republish the oldest published goth
 	def self.publish
-		g = self.find(:first, :conditions => {:published_at => nil}, :order => 'RAND()')
+		g = self.find(:first, :conditions => {:published_at => nil}, :order => 'RANDOM()')
 		unless g
 			g = self.find(:first, :order => 'published_at ASC')
 		end
